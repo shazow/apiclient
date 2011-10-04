@@ -1,7 +1,7 @@
 """
 Facebook OpenGraph API. Usage:
 
-api = FacebookAPI('xxxxx')
+api = FacebookAPI()
 r = api.call('/', ids='shazow,minecraft')
 """
 
