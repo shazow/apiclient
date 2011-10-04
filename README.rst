@@ -50,5 +50,27 @@ For more specific API examples, see the
 TODO
 ====
 
-- More documentation and examples.
 - Tests.
+- More documentation.
+- More types of API handshakes, like OAuth and OAuth2.
+- More examples.
+
+
+Contributing
+============
+
+Any contribution is highly encouraged and desired. :)
+
+#. Fork on Github.
+#. Make the changes. Bonus points if changes include documentation and tests.
+#. Send a pull request.
+
+If you're unsure if it's a good idea, open an *Issue* or contact me to discuss
+your proposal. Extra juicy bonus points if you pick off some of the items in
+the **TODO** list.
+
+
+License
+=======
+
+`MIT <https://github.com/shazow/apiclient/blob/master/LICENSE>`_
