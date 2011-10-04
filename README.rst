@@ -4,7 +4,7 @@ Tiny framework for building *good* API client libraries thanks to
 Highlights
 ==========
 
-- Threadsafely reuses connections with Keep-Alive.
+- Threadsafely reuses connections with Keep-Alive (via urllib3).
 - Small and easy to understand codebase perfect for extending and building upon.
 - Built-in support for rate limiting and request throttling.
 - Functional examples for the
