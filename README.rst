@@ -8,7 +8,7 @@ Highlights
 - Small and easy to understand codebase perfect for extending and building upon.
 - Built-in support for rate limiting and request throttling.
 - Functional examples for the
-  `Klout API <https://github.com/shazow/apiclient/blob/master/examples/klout.py`_
+  `Klout API <https://github.com/shazow/apiclient/blob/master/examples/klout.py>`_
   and the
   `Facebook OpenGraph API <https://github.com/shazow/apiclient/blob/master/examples/facebook.py>`_.
 
