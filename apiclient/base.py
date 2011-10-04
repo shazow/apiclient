@@ -40,6 +40,7 @@ class APIClient_SharedSecret(APIClient):
         self.api_key = api_key
 
     def _compose_url(self, path, params=None):
+        # TODO: fix this, as per our conversation at Oct. 4, 2011, 05:10 UTC
         p = {self.API_KEY_PARAM: self.api_key}
 
         if params:
