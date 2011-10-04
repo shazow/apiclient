@@ -21,14 +21,13 @@ How to make your own super-simple client API library::
     >>> from apiclient import APIClient
     >>> class AcmePublicAPI(APIClient):
     ...    BASE_URL = 'https://localhost:1234/'
-    ...
-    >>>
+
     >>> acme_api = AcmePublicAPI()
+
     >>> acme_api.call('/hello')
     {'what': 'world'}
     >>> acme_api.call('/echo', params={"ping": "pong"})
     {'ping': 'pong'}
-    >>> 
 
 
 How to add rate limiting to your client API library so that we don't exceed 10
@@ -37,6 +36,7 @@ requests per minute::
     >>> from apiclient import RateLimiter
     >>> lock = RateLimiter(max_messages=10, every_seconds=60)
     >>> acme_api = AcmePublicAPI(rate_limit_lock=lock)
+
     >>> # Get the first 100 pages
     >>> for page in xrange(100):
     ...     # Whenever our request rate exceeds the specifications of the API's
