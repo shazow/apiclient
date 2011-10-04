@@ -65,9 +65,10 @@ Any contribution is highly encouraged and desired. :)
 #. Make the changes. Bonus points if changes include documentation and tests.
 #. Send a pull request.
 
-If you're unsure if it's a good idea, open an *Issue* or contact me to discuss
-your proposal. Extra juicy bonus points if you pick off some of the items in
-the **TODO** list.
+If you're unsure if it's a good idea,
+`open an Issue <https://github.com/shazow/apiclient/issues>`_ or
+`contact me <https://github.com/inbox/new/shazow>`_ to discuss your proposal.
+Extra juicy bonus points if you pick off some of the items in the **TODO** list.
 
 
 License
