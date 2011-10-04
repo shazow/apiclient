@@ -1,2 +1,2 @@
-from .base import SimpleAPI, SimpleAPI_SharedSecret
+from .base import APIClient, APIClient_SharedSecret
 from .ratelimiter import RateLimiter

@@ -12,7 +12,9 @@ except ImportError, _:
 version = '1.0'
 long_description = open('README.rst').read()
 
-requirements = []
+requirements = [
+    'urllib3',
+]
 tests_requirements = requirements + [
     'nose',
 ]

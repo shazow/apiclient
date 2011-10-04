@@ -32,3 +32,9 @@ class FacebookAPI(APIClient):
             return r
 
         raise FacebookError(has_error['type'], has_error['message'], response=response)
+
+
+if __name__ == '__main__':
+    api = FacebookAPI()
+    r = api.call('/', ids='shazow,minecraft')
+    print r

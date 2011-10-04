@@ -60,3 +60,17 @@ class KloutAPI(APIClient_SharedSecret):
 
     def call(self, path, **params):
         return self._request('GET', path, params=params)
+
+
+if __name__ == '__main__':
+    import sys
+
+    if len(sys.argv) < 2:
+        print "Must provide a Klout API key."
+        sys.exit(1)
+
+    api_key = sys.argv[1]
+
+    api = KloutAPI(api_key)
+    r = api.call('/users/show', users='shazow,limedaring')
+    print r
