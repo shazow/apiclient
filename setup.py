@@ -9,8 +9,7 @@ except ImportError, _:
     pass # No 'develop' command, oh well.
 
 
-version = '1.0'
-long_description = open('README.rst').read()
+version = '1.0.1'
 
 requirements = [
     'urllib3',
@@ -22,7 +21,7 @@ tests_requirements = requirements + [
 setup(name='apiclient',
       version=version,
       description="Framework for making good API client libraries using urllib3.",
-      long_description=long_description,
+      long_description=open('README.rst').read() + '\n\n' + open('CHANGES.rst').read(),
       classifiers=[
           'Environment :: Web Environment',
           'Intended Audience :: Developers',
