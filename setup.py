@@ -1,15 +1,24 @@
 #!/usr/bin/env python
 
-from distutils.core import setup
-
+import os
 
 try:
-    import setuptools
-except ImportError, _:
-    pass # No 'develop' command, oh well.
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
 
+def path(p):
+    return os.path.join(os.path.abspath(os.path.dirname(__file__)), p)
 
-version = '1.0.1'
+long_description = ''
+
+try:
+    long_description += open(path('README.rst')).read()
+    long_description += '\n\n' + open(path('CHANGES.rst')).read()
+except IOError:
+    pass
+
+version = '1.0.2'
 
 requirements = [
     'urllib3',
@@ -21,7 +30,7 @@ tests_requirements = requirements + [
 setup(name='apiclient',
       version=version,
       description="Framework for making good API client libraries using urllib3.",
-      long_description=open('README.rst').read() + '\n\n' + open('CHANGES.rst').read(),
+      long_description=long_description,
       classifiers=[
           'Environment :: Web Environment',
           'Intended Audience :: Developers',

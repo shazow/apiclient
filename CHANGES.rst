@@ -1,6 +1,13 @@
 Changes
 =======
 
+1.0.2 (2011-10-20)
+++++++++++++++++++
+
+* Fixed setup.py from failing upon not seeing README.rst when installing using
+  easy_install.
+
+
 1.0.1 (2011-10-10)
 ++++++++++++++++++
 
