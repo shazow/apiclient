@@ -46,6 +46,6 @@ setup(name='apiclient',
       url='https://github.com/shazow/apiclient',
       license='MIT',
       packages=['apiclient'],
-      requires=requirements,
+      install_requires=requirements,
       tests_require=tests_requirements,
       )
