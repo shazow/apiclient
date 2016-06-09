@@ -10,8 +10,9 @@ except ImportError:
 class APIClient(object):
     BASE_URL = 'http://localhost:5000/'
 
-    def __init__(self, rate_limit_lock=None):
+    def __init__(self, rate_limit_lock=None, encoding='utf8'):
         self.rate_limit_lock = rate_limit_lock
+        self.encoding = encoding
         self.connection_pool = self._make_connection_pool(self.BASE_URL)
 
     def _make_connection_pool(self, url):
@@ -21,7 +22,7 @@ class APIClient(object):
         return self.BASE_URL + path + '?' + urlencode(params)
 
     def _handle_response(self, response):
-        return json.loads(response.data)
+        return json.loads(response.data.decode(self.encoding))
 
     def _request(self, method, path, params=None):
         url = self._compose_url(path, params)
