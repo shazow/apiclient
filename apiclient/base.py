@@ -13,9 +13,9 @@ class APIClient(object):
     def __init__(self, rate_limit_lock=None, encoding='utf8'):
         self.rate_limit_lock = rate_limit_lock
         self.encoding = encoding
-        self.connection_pool = self._make_connection_pool(self.BASE_URL)
+        self.connection_pool = self._make_connection_pool()
 
-    def _make_connection_pool(self, url):
+    def _make_connection_pool(self):
         return urllib3.PoolManager( cert_reqs='CERT_REQUIRED',
                                     ca_certs=certifi.where())
 
