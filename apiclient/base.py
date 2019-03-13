@@ -1,6 +1,6 @@
 import json
-
-from urllib3 import connection_from_url
+import urllib3
+import certifi
 try:
     from urllib import urlencode
 except ImportError:
@@ -16,7 +16,8 @@ class APIClient(object):
         self.connection_pool = self._make_connection_pool(self.BASE_URL)
 
     def _make_connection_pool(self, url):
-        return connection_from_url(url)
+        return urllib3.PoolManager( cert_reqs='CERT_REQUIRED',
+                                    ca_certs=certifi.where())
 
     def _compose_url(self, path, params=None):
         return self.BASE_URL + path + '?' + urlencode(params)
