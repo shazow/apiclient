@@ -22,6 +22,7 @@ version = '1.0.3'
 
 requirements = [
     'urllib3',
+    'certifi'
 ]
 tests_requirements = requirements + [
     'nose',
