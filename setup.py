@@ -18,7 +18,7 @@ try:
 except IOError:
     pass
 
-version = '1.0.3'
+version = '1.0.4'
 
 requirements = [
     'urllib3',
