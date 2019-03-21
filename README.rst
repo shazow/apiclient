@@ -1,6 +1,8 @@
 Tiny framework for building *good* API client libraries thanks to
 `urllib3 <https://github.com/shazow/urllib3/>`_.
 
+**Status**: `apiclient` is not actively maintained. Please use it as a reference for your own code--it is very small. If you must use it as a dependency, do so at your own risk. :)
+
 Highlights
 ==========
 
